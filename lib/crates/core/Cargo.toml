@@ -1,0 +1,23 @@
+[package]
+name = "chart-renderer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Lightweight Vega-Lite-style declarative chart renderer: spec -> scales -> marks -> PNG"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tiny-skia = { version = "0.11", default-features = false, features = ["std", "simd"] }
+png = "0.17"
+ab_glyph = { version = "0.2", optional = true }
+cosmic-text = { version = "0.12", optional = true }
+fontdb = { version = "0.16", optional = true }
+
+[dev-dependencies]
+insta = { version = "1", features = ["json"] }
+
+[features]
+default = ["simple-text"]
+simple-text = ["dep:ab_glyph"]
+full-text = ["dep:cosmic-text", "dep:fontdb"]

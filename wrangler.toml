@@ -1,0 +1,8 @@
+name = "chart-renderer"
+compatibility_date = "2025-01-01"
+
+# Pure static assets — no Worker script needed. The whole app is served
+# client-side; vite builds it, wrangler uploads it.
+[assets]
+directory = "./web/dist"
+not_found_handling = "single-page-application"

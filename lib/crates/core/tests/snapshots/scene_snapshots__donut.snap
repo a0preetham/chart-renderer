@@ -1,0 +1,268 @@
+---
+source: crates/core/tests/scene_snapshots.rs
+expression: json
+---
+{
+  "background": {
+    "a": 255,
+    "b": 255,
+    "g": 255,
+    "r": 255
+  },
+  "height": 270,
+  "items": [
+    {
+      "cx": 135,
+      "cy": 135,
+      "end_angle": 4.021,
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "inner_radius": 60,
+      "kind": "arc",
+      "outer_radius": 130,
+      "start_angle": 0,
+      "stroke": null
+    },
+    {
+      "cx": 135,
+      "cy": 135,
+      "end_angle": 6.283,
+      "fill": {
+        "a": 255,
+        "b": 75,
+        "g": 162,
+        "r": 84
+      },
+      "inner_radius": 60,
+      "kind": "arc",
+      "outer_radius": 130,
+      "start_angle": 5.089,
+      "stroke": null
+    },
+    {
+      "cx": 135,
+      "cy": 135,
+      "end_angle": 4.335,
+      "fill": {
+        "a": 255,
+        "b": 24,
+        "g": 133,
+        "r": 245
+      },
+      "inner_radius": 60,
+      "kind": "arc",
+      "outer_radius": 130,
+      "start_angle": 4.021,
+      "stroke": null
+    },
+    {
+      "cx": 135,
+      "cy": 135,
+      "end_angle": 4.524,
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "inner_radius": 60,
+      "kind": "arc",
+      "outer_radius": 130,
+      "start_angle": 4.335,
+      "stroke": null
+    },
+    {
+      "cx": 135,
+      "cy": 135,
+      "end_angle": 5.089,
+      "fill": {
+        "a": 255,
+        "b": 178,
+        "g": 183,
+        "r": 114
+      },
+      "inner_radius": 60,
+      "kind": "arc",
+      "outer_radius": 130,
+      "start_angle": 4.524,
+      "stroke": null
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "top",
+      "content": "browser",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 283,
+      "y": 5
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 283,
+      "y": 22
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Chrome",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 301.284,
+      "y": 27.642
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 24,
+        "g": 133,
+        "r": 245
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 283,
+      "y": 35.284
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Edge",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 301.284,
+      "y": 40.926
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 283,
+      "y": 48.568
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Firefox",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 301.284,
+      "y": 54.209
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 178,
+        "g": 183,
+        "r": 114
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 283,
+      "y": 61.851
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Other",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 301.284,
+      "y": 67.493
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 75,
+        "g": 162,
+        "r": 84
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 283,
+      "y": 75.135
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Safari",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 301.284,
+      "y": 80.777
+    }
+  ],
+  "plot": {
+    "h": 260,
+    "w": 260,
+    "x": 5,
+    "y": 5
+  },
+  "width": 341.85
+}

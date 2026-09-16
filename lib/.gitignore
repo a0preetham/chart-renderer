@@ -1,0 +1,4 @@
+target/
+node_modules/
+crates/wasm/pkg/
+crates/wasm/pkg-*/

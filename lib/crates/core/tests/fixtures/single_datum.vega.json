@@ -1,0 +1,178 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 200,
+    "height": 150
+  },
+  "marks": {
+    "axis-grid": [
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 150,
+        "x2": 200,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 117,
+        "x2": 200,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 83,
+        "x2": 200,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 50,
+        "x2": 200,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 17,
+        "x2": 200,
+        "stroke": "#ddd"
+      }
+    ],
+    "axis-tick": [
+      {
+        "role": "axis-tick",
+        "x": 100,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 150,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 117,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 83,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 50,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 17,
+        "x2": -5,
+        "stroke": "#888"
+      }
+    ],
+    "axis-label": [
+      {
+        "role": "axis-label",
+        "x": 99.5,
+        "y": 7,
+        "text": "only",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 150,
+        "text": "0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 116.667,
+        "text": "10",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 83.333,
+        "text": "20",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 50,
+        "text": "30",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 16.667,
+        "text": "40",
+        "fill": "#000"
+      }
+    ],
+    "axis-domain": [
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 0,
+        "x2": 200,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 150,
+        "y2": 0,
+        "stroke": "#888"
+      }
+    ],
+    "axis-title": [
+      {
+        "role": "axis-title",
+        "x": 100,
+        "y": 43,
+        "text": "category",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-title",
+        "x": -27,
+        "y": 75,
+        "text": "amount",
+        "fill": "#000"
+      }
+    ],
+    "mark": [
+      {
+        "role": "mark",
+        "x": 10,
+        "y": 10,
+        "y2": 150,
+        "width": 180,
+        "height": 140,
+        "fill": "#4c78a8"
+      }
+    ]
+  }
+}

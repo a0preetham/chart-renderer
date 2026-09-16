@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "The same data with the discrete channel on y, giving horizontal bars.",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "values": [
+      { "category": "A", "amount": 28 },
+      { "category": "B", "amount": 55 },
+      { "category": "C", "amount": 43 },
+      { "category": "D", "amount": 91 }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": { "field": "amount", "type": "quantitative" },
+    "y": { "field": "category", "type": "nominal" }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "chart-renderer-wasm",
+  "type": "module",
+  "description": "wasm-bindgen surface for chart-renderer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "files": [
+    "chart_renderer_wasm_bg.wasm",
+    "chart_renderer_wasm.js",
+    "chart_renderer_wasm.d.ts"
+  ],
+  "main": "chart_renderer_wasm.js",
+  "types": "chart_renderer_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A colour encoding splits the data into one line per series, with a legend.",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "values": [
+      { "step": 1, "value": 10, "series": "north" },
+      { "step": 2, "value": 18, "series": "north" },
+      { "step": 3, "value": 15, "series": "north" },
+      { "step": 4, "value": 27, "series": "north" },
+      { "step": 1, "value": 22, "series": "south" },
+      { "step": 2, "value": 14, "series": "south" },
+      { "step": 3, "value": 31, "series": "south" },
+      { "step": 4, "value": 20, "series": "south" }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": { "field": "step", "type": "quantitative" },
+    "y": { "field": "value", "type": "quantitative" },
+    "color": { "field": "series", "type": "nominal" }
+  }
+}

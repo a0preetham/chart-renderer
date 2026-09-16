@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Point marks on two quantitative scales.",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "values": [
+      { "weight": 3, "score": 28 },
+      { "weight": 7, "score": 55 },
+      { "weight": 12, "score": 43 },
+      { "weight": 18, "score": 91 },
+      { "weight": 21, "score": 66 }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": { "field": "weight", "type": "quantitative" },
+    "y": { "field": "score", "type": "quantitative" }
+  }
+}

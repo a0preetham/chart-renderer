@@ -1,0 +1,370 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 300,
+    "height": 200
+  },
+  "marks": {
+    "axis-grid": [
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 200,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 171,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 143,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 114,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 86,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 57,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 29,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#ddd"
+      }
+    ],
+    "axis-tick": [
+      {
+        "role": "axis-tick",
+        "x": 38,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 113,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 188,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 263,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 200,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 171,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 143,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 114,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 86,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 57,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 29,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 0,
+        "x2": -5,
+        "stroke": "#888"
+      }
+    ],
+    "axis-label": [
+      {
+        "role": "axis-label",
+        "x": 37.5,
+        "y": 7,
+        "text": "Apr",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 112.5,
+        "y": 7,
+        "text": "Feb",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 187.5,
+        "y": 7,
+        "text": "Jan",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 262.5,
+        "y": 7,
+        "text": "Mar",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 200,
+        "text": "0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 171.429,
+        "text": "5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 142.857,
+        "text": "10",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 114.286,
+        "text": "15",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 85.714,
+        "text": "20",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 57.143,
+        "text": "25",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 28.571,
+        "text": "30",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 0,
+        "text": "35",
+        "fill": "#000"
+      }
+    ],
+    "axis-domain": [
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 200,
+        "y2": 0,
+        "stroke": "#888"
+      }
+    ],
+    "axis-title": [
+      {
+        "role": "axis-title",
+        "x": 150,
+        "y": 35,
+        "text": "month",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-title",
+        "x": -27,
+        "y": 100,
+        "text": "sales",
+        "fill": "#000"
+      }
+    ],
+    "mark": [
+      {
+        "role": "mark",
+        "x": 37.5,
+        "y": 11.429,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            37.5,
+            11.429
+          ],
+          [
+            112.5,
+            57.143
+          ],
+          [
+            187.5,
+            97.143
+          ],
+          [
+            262.5,
+            120
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 112.5,
+        "y": 57.143,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            37.5,
+            11.429
+          ],
+          [
+            112.5,
+            57.143
+          ],
+          [
+            187.5,
+            97.143
+          ],
+          [
+            262.5,
+            120
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 187.5,
+        "y": 97.143,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            37.5,
+            11.429
+          ],
+          [
+            112.5,
+            57.143
+          ],
+          [
+            187.5,
+            97.143
+          ],
+          [
+            262.5,
+            120
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 262.5,
+        "y": 120,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            37.5,
+            11.429
+          ],
+          [
+            112.5,
+            57.143
+          ],
+          [
+            187.5,
+            97.143
+          ],
+          [
+            262.5,
+            120
+          ]
+        ]
+      }
+    ]
+  }
+}

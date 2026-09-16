@@ -1,0 +1,69 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 200,
+    "height": 150
+  },
+  "marks": {
+    "axis-grid": [
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 75,
+        "x2": 200,
+        "stroke": "#ddd"
+      }
+    ],
+    "axis-domain": [
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 0,
+        "x2": 200,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 150,
+        "y2": 0,
+        "stroke": "#888"
+      }
+    ],
+    "axis-title": [
+      {
+        "role": "axis-title",
+        "x": 100,
+        "y": 4,
+        "text": "category",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-title",
+        "x": -19,
+        "y": 75,
+        "text": "amount",
+        "fill": "#000"
+      }
+    ],
+    "axis-tick": [
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 75,
+        "x2": -5,
+        "stroke": "#888"
+      }
+    ],
+    "axis-label": [
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 75,
+        "text": "0",
+        "fill": "#000"
+      }
+    ]
+  }
+}

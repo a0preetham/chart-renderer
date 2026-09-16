@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "No rows at all. Must render an empty chart, not fail.",
+  "width": 200,
+  "height": 150,
+  "data": { "values": [] },
+  "mark": "bar",
+  "encoding": {
+    "x": { "field": "category", "type": "nominal" },
+    "y": { "field": "amount", "type": "quantitative" }
+  }
+}

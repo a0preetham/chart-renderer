@@ -1,0 +1,15 @@
+{
+  "name": "chart-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Vega-Lite-style chart renderer in Rust/WASM, plus a demo comparing it side-by-side against real Vega-Lite. Deployed as a Cloudflare Worker.",
+  "scripts": {
+    "build": "npm --prefix web run build",
+    "dev": "npm --prefix web run dev",
+    "sync-wasm": "npm --prefix web run sync-wasm",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.0"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 300,
+    "height": 200
+  },
+  "marks": {
+    "axis-grid": [
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 200,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 167,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 133,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 100,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 67,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 33,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#ddd"
+      }
+    ],
+    "axis-tick": [
+      {
+        "role": "axis-tick",
+        "x": 37,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 112,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 187,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 262,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 200,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 167,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 133,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 100,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 67,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 33,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 0,
+        "x2": -5,
+        "stroke": "#888"
+      }
+    ],
+    "axis-label": [
+      {
+        "role": "axis-label",
+        "x": 37,
+        "y": 7,
+        "text": "Alpha",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 112,
+        "y": 7,
+        "text": "Beta",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 187,
+        "y": 7,
+        "text": "Mid",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 262,
+        "y": 7,
+        "text": "Zeta",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 200,
+        "text": "0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 166.667,
+        "text": "10",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 133.333,
+        "text": "20",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 100,
+        "text": "30",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 66.667,
+        "text": "40",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 33.333,
+        "text": "50",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 0,
+        "text": "60",
+        "fill": "#000"
+      }
+    ],
+    "axis-domain": [
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 200,
+        "y2": 0,
+        "stroke": "#888"
+      }
+    ],
+    "axis-title": [
+      {
+        "role": "axis-title",
+        "x": 150,
+        "y": 51,
+        "text": "site",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-title",
+        "x": -27,
+        "y": 100,
+        "text": "yield",
+        "fill": "#000"
+      }
+    ],
+    "mark": [
+      {
+        "role": "mark",
+        "x": 228.75,
+        "y": 96.667,
+        "y2": 200,
+        "width": 67.5,
+        "height": 103.333,
+        "fill": "#f58518"
+      },
+      {
+        "role": "mark",
+        "x": 3.75,
+        "y": 40,
+        "y2": 200,
+        "width": 67.5,
+        "height": 160,
+        "fill": "#4c78a8"
+      },
+      {
+        "role": "mark",
+        "x": 153.75,
+        "y": 126.667,
+        "y2": 200,
+        "width": 67.5,
+        "height": 73.333,
+        "fill": "#f58518"
+      },
+      {
+        "role": "mark",
+        "x": 78.75,
+        "y": 13.333,
+        "y2": 200,
+        "width": 67.5,
+        "height": 186.667,
+        "fill": "#4c78a8"
+      }
+    ],
+    "legend-symbol": [
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#4c78a8",
+        "shape": "square"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#f58518",
+        "shape": "square"
+      }
+    ],
+    "legend-label": [
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "east",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "west",
+        "fill": "#000"
+      }
+    ],
+    "legend-title": [
+      {
+        "role": "legend-title",
+        "x": 0,
+        "y": 0,
+        "text": "region",
+        "fill": "#000"
+      }
+    ]
+  }
+}

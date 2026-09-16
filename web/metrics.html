@@ -1,0 +1,93 @@
+<!doctype html>
+<!--
+  Temporary diagnostic: reports how Chrome positions text in the embedded font,
+  so our TextShaper's ascent/descent and baseline handling can be compared
+  against what the canvas renderer actually does.
+
+  Open at /demos/chart-renderer/metrics.html with the dev server running.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>font metrics</title>
+    <style>
+      @font-face {
+        font-family: 'ChartRenderer Sans';
+        src: url('./src/LiberationSans-Subset.ttf') format('truetype');
+        font-display: block;
+      }
+      body {
+        font: 13px ui-monospace, monospace;
+        white-space: pre;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="out">measuring…</div>
+    <script type="module">
+      const FONT = 'ChartRenderer Sans'
+      const SIZE = 10
+
+      await document.fonts.load(`${SIZE}px "${FONT}"`)
+      await document.fonts.ready
+
+      const canvas = document.createElement('canvas')
+      const ctx = canvas.getContext('2d')
+      ctx.font = `${SIZE}px "${FONT}"`
+
+      const m = ctx.measureText('Hxg0')
+      const lines = []
+      const put = (k, v) => lines.push(`${k.padEnd(34)} ${typeof v === 'number' ? v.toFixed(4) : v}`)
+
+      put('font', ctx.font)
+      put('fontBoundingBoxAscent', m.fontBoundingBoxAscent)
+      put('fontBoundingBoxDescent', m.fontBoundingBoxDescent)
+      put('actualBoundingBoxAscent', m.actualBoundingBoxAscent)
+      put('actualBoundingBoxDescent', m.actualBoundingBoxDescent)
+      put('emHeightAscent', m.emHeightAscent)
+      put('emHeightDescent', m.emHeightDescent)
+      put('alphabeticBaseline', m.alphabeticBaseline)
+      put('hangingBaseline', m.hangingBaseline)
+      put('ideographicBaseline', m.ideographicBaseline)
+      put('width("Hxg0")', m.width)
+      lines.push('')
+
+      // Where does each textBaseline actually put the alphabetic baseline?
+      // Draw a glyph and find its ink extent; the delta between baselines is what
+      // our renderer has to reproduce.
+      canvas.width = 60
+      canvas.height = 60
+      for (const baseline of ['alphabetic', 'top', 'middle', 'bottom', 'hanging']) {
+        const g = canvas.getContext('2d', { willReadFrequently: true })
+        g.fillStyle = '#fff'
+        g.fillRect(0, 0, 60, 60)
+        g.font = `${SIZE}px "${FONT}"`
+        g.textBaseline = baseline
+        g.fillStyle = '#000'
+        g.fillText('H', 5, 30)
+
+        const data = g.getImageData(0, 0, 60, 60).data
+        let top = null
+        let bottom = null
+        for (let y = 0; y < 60; y++) {
+          for (let x = 0; x < 60; x++) {
+            if (data[(y * 60 + x) * 4] < 128) {
+              if (top === null) top = y
+              bottom = y
+            }
+          }
+        }
+        put(`ink of 'H' at baseline=${baseline}`, `top=${top} bottom=${bottom} (drawn at y=30)`)
+      }
+
+      lines.push('')
+      // Widths, to confirm our advance calculation matches.
+      for (const s of ['A', 'W', '0', '100', 'Alpha', 'category']) {
+        put(`width(${JSON.stringify(s)})`, ctx.measureText(s).width)
+      }
+
+      document.getElementById('out').textContent = lines.join('\n')
+    </script>
+  </body>
+</html>

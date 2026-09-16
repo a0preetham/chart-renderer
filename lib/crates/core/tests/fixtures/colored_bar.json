@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bars coloured by a second nominal field. Categories are deliberately unsorted in the data, since Vega sorts nominal domains.",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "values": [
+      { "site": "Zeta", "yield": 31, "region": "west" },
+      { "site": "Alpha", "yield": 48, "region": "east" },
+      { "site": "Mid", "yield": 22, "region": "west" },
+      { "site": "Beta", "yield": 56, "region": "east" }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": { "field": "site", "type": "nominal" },
+    "y": { "field": "yield", "type": "quantitative" },
+    "color": { "field": "region", "type": "nominal" }
+  }
+}

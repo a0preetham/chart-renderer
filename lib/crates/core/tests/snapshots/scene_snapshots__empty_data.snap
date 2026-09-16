@@ -1,0 +1,158 @@
+---
+source: crates/core/tests/scene_snapshots.rs
+expression: json
+---
+{
+  "background": {
+    "a": 255,
+    "b": 255,
+    "g": 255,
+    "r": 255
+  },
+  "height": 187,
+  "items": [
+    {
+      "kind": "line",
+      "points": [
+        [
+          33,
+          85
+        ],
+        [
+          233,
+          85
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          33,
+          10
+        ],
+        [
+          33,
+          160
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          28,
+          85
+        ],
+        [
+          33,
+          85
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "0",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 26,
+      "y": 85
+    },
+    {
+      "anchor": "middle",
+      "angle": -90,
+      "baseline": "alphabetic",
+      "content": "amount",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 16.438,
+      "y": 85
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          33,
+          160
+        ],
+        [
+          233,
+          160
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "category",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 133,
+      "y": 171
+    }
+  ],
+  "plot": {
+    "h": 150,
+    "w": 200,
+    "x": 33,
+    "y": 10
+  },
+  "width": 238
+}

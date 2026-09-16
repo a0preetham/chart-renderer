@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A pie chart. Categories are unsorted in the data, since Vega stacks slices in colour-domain order rather than row order.",
+  "data": {
+    "values": [
+      { "category": "Zeta", "value": 10 },
+      { "category": "Alpha", "value": 20 },
+      { "category": "Mid", "value": 5 },
+      { "category": "Beta", "value": 12 }
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": { "field": "value", "type": "quantitative" },
+    "color": { "field": "category", "type": "nominal" }
+  }
+}

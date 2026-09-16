@@ -1,0 +1,484 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 300,
+    "height": 200
+  },
+  "marks": {
+    "axis-grid": [
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 38,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 75,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 113,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 150,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 188,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 225,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 263,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 300,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 200,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 156,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 111,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 67,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 22,
+        "x2": 300,
+        "stroke": "#ddd"
+      }
+    ],
+    "axis-tick": [
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 38,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 75,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 113,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 150,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 188,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 225,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 263,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 300,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 200,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 156,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 111,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 67,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 22,
+        "x2": -5,
+        "stroke": "#888"
+      }
+    ],
+    "axis-label": [
+      {
+        "role": "axis-label",
+        "x": 0,
+        "y": 7,
+        "text": "1.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 37.5,
+        "y": 7,
+        "text": "1.5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 75,
+        "y": 7,
+        "text": "2.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 112.5,
+        "y": 7,
+        "text": "2.5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 150,
+        "y": 7,
+        "text": "3.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 187.5,
+        "y": 7,
+        "text": "3.5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 225,
+        "y": 7,
+        "text": "4.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 262.5,
+        "y": 7,
+        "text": "4.5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 300,
+        "y": 7,
+        "text": "5.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 200,
+        "text": "0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 155.556,
+        "text": "10",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 111.111,
+        "text": "20",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 66.667,
+        "text": "30",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 22.222,
+        "text": "40",
+        "fill": "#000"
+      }
+    ],
+    "axis-domain": [
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 200,
+        "y2": 0,
+        "stroke": "#888"
+      }
+    ],
+    "axis-title": [
+      {
+        "role": "axis-title",
+        "x": 150,
+        "y": 21,
+        "text": "step",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-title",
+        "x": -27,
+        "y": 100,
+        "text": "value",
+        "fill": "#000"
+      }
+    ],
+    "mark": [
+      {
+        "role": "mark",
+        "x": 0,
+        "y": 146.667,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            146.667
+          ],
+          [
+            75,
+            44.444
+          ],
+          [
+            150,
+            75.556
+          ],
+          [
+            225,
+            102.222
+          ],
+          [
+            300,
+            8.889
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 75,
+        "y": 44.444,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            146.667
+          ],
+          [
+            75,
+            44.444
+          ],
+          [
+            150,
+            75.556
+          ],
+          [
+            225,
+            102.222
+          ],
+          [
+            300,
+            8.889
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 150,
+        "y": 75.556,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            146.667
+          ],
+          [
+            75,
+            44.444
+          ],
+          [
+            150,
+            75.556
+          ],
+          [
+            225,
+            102.222
+          ],
+          [
+            300,
+            8.889
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 225,
+        "y": 102.222,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            146.667
+          ],
+          [
+            75,
+            44.444
+          ],
+          [
+            150,
+            75.556
+          ],
+          [
+            225,
+            102.222
+          ],
+          [
+            300,
+            8.889
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 300,
+        "y": 8.889,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            146.667
+          ],
+          [
+            75,
+            44.444
+          ],
+          [
+            150,
+            75.556
+          ],
+          [
+            225,
+            102.222
+          ],
+          [
+            300,
+            8.889
+          ]
+        ]
+      }
+    ]
+  }
+}

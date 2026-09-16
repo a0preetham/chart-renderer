@@ -1,0 +1,13 @@
+{
+  "name": "chart-renderer-vega-ref",
+  "private": true,
+  "type": "module",
+  "description": "Generates reference scenegraphs from the real Vega-Lite for the layer-8 cross-check. Versions are pinned: upgrading can shift layout defaults and light up the whole comparison at once, so regenerate deliberately.",
+  "scripts": {
+    "dump": "node dump.mjs"
+  },
+  "dependencies": {
+    "vega": "5.33.1",
+    "vega-lite": "5.23.0"
+  }
+}

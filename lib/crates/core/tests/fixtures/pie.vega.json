@@ -1,0 +1,125 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 200,
+    "height": 200
+  },
+  "marks": {
+    "mark": [
+      {
+        "role": "mark",
+        "x": 100,
+        "y": 100,
+        "fill": "#72b7b2",
+        "angle0": 4.946,
+        "angle1": 6.283,
+        "outerRadius": 100,
+        "innerRadius": 0
+      },
+      {
+        "role": "mark",
+        "x": 100,
+        "y": 100,
+        "fill": "#4c78a8",
+        "angle0": 0,
+        "angle1": 2.674,
+        "outerRadius": 100,
+        "innerRadius": 0
+      },
+      {
+        "role": "mark",
+        "x": 100,
+        "y": 100,
+        "fill": "#e45756",
+        "angle0": 4.278,
+        "angle1": 4.946,
+        "outerRadius": 100,
+        "innerRadius": 0
+      },
+      {
+        "role": "mark",
+        "x": 100,
+        "y": 100,
+        "fill": "#f58518",
+        "angle0": 2.674,
+        "angle1": 4.278,
+        "outerRadius": 100,
+        "innerRadius": 0
+      }
+    ],
+    "legend-symbol": [
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#4c78a8",
+        "shape": "circle"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#f58518",
+        "shape": "circle"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#e45756",
+        "shape": "circle"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#72b7b2",
+        "shape": "circle"
+      }
+    ],
+    "legend-label": [
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Alpha",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Beta",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Mid",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Zeta",
+        "fill": "#000"
+      }
+    ],
+    "legend-title": [
+      {
+        "role": "legend-title",
+        "x": 0,
+        "y": 0,
+        "text": "category",
+        "fill": "#000"
+      }
+    ]
+  }
+}

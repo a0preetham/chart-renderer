@@ -1,0 +1,602 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 300,
+    "height": 200
+  },
+  "marks": {
+    "axis-grid": [
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 50,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 100,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 150,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 200,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 250,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 300,
+        "y": -200,
+        "y2": 0,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 200,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 171,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 143,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 114,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 86,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 57,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 29,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#ddd"
+      }
+    ],
+    "axis-tick": [
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 50,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 100,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 150,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 200,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 250,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 300,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 200,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 171,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 143,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 114,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 86,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 57,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 29,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 0,
+        "x2": -5,
+        "stroke": "#888"
+      }
+    ],
+    "axis-label": [
+      {
+        "role": "axis-label",
+        "x": 0,
+        "y": 7,
+        "text": "1.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 50,
+        "y": 7,
+        "text": "1.5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 100,
+        "y": 7,
+        "text": "2.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 150,
+        "y": 7,
+        "text": "2.5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 200,
+        "y": 7,
+        "text": "3.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 250,
+        "y": 7,
+        "text": "3.5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 300,
+        "y": 7,
+        "text": "4.0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 200,
+        "text": "0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 171.429,
+        "text": "5",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 142.857,
+        "text": "10",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 114.286,
+        "text": "15",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 85.714,
+        "text": "20",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 57.143,
+        "text": "25",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 28.571,
+        "text": "30",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 0,
+        "text": "35",
+        "fill": "#000"
+      }
+    ],
+    "axis-domain": [
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 200,
+        "y2": 0,
+        "stroke": "#888"
+      }
+    ],
+    "axis-title": [
+      {
+        "role": "axis-title",
+        "x": 150,
+        "y": 21,
+        "text": "step",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-title",
+        "x": -27,
+        "y": 100,
+        "text": "value",
+        "fill": "#000"
+      }
+    ],
+    "mark": [
+      {
+        "role": "mark",
+        "x": 0,
+        "y": 142.857,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            142.857
+          ],
+          [
+            100,
+            97.143
+          ],
+          [
+            200,
+            114.286
+          ],
+          [
+            300,
+            45.714
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 100,
+        "y": 97.143,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            142.857
+          ],
+          [
+            100,
+            97.143
+          ],
+          [
+            200,
+            114.286
+          ],
+          [
+            300,
+            45.714
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 200,
+        "y": 114.286,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            142.857
+          ],
+          [
+            100,
+            97.143
+          ],
+          [
+            200,
+            114.286
+          ],
+          [
+            300,
+            45.714
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 300,
+        "y": 45.714,
+        "stroke": "#4c78a8",
+        "vertices": [
+          [
+            0,
+            142.857
+          ],
+          [
+            100,
+            97.143
+          ],
+          [
+            200,
+            114.286
+          ],
+          [
+            300,
+            45.714
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 0,
+        "y": 74.286,
+        "stroke": "#f58518",
+        "vertices": [
+          [
+            0,
+            74.286
+          ],
+          [
+            100,
+            120
+          ],
+          [
+            200,
+            22.857
+          ],
+          [
+            300,
+            85.714
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 100,
+        "y": 120,
+        "stroke": "#f58518",
+        "vertices": [
+          [
+            0,
+            74.286
+          ],
+          [
+            100,
+            120
+          ],
+          [
+            200,
+            22.857
+          ],
+          [
+            300,
+            85.714
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 200,
+        "y": 22.857,
+        "stroke": "#f58518",
+        "vertices": [
+          [
+            0,
+            74.286
+          ],
+          [
+            100,
+            120
+          ],
+          [
+            200,
+            22.857
+          ],
+          [
+            300,
+            85.714
+          ]
+        ]
+      },
+      {
+        "role": "mark",
+        "x": 300,
+        "y": 85.714,
+        "stroke": "#f58518",
+        "vertices": [
+          [
+            0,
+            74.286
+          ],
+          [
+            100,
+            120
+          ],
+          [
+            200,
+            22.857
+          ],
+          [
+            300,
+            85.714
+          ]
+        ]
+      }
+    ],
+    "legend-symbol": [
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "transparent",
+        "stroke": "#4c78a8",
+        "shape": "stroke"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "transparent",
+        "stroke": "#f58518",
+        "shape": "stroke"
+      }
+    ],
+    "legend-label": [
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "north",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "south",
+        "fill": "#000"
+      }
+    ],
+    "legend-title": [
+      {
+        "role": "legend-title",
+        "x": 0,
+        "y": 0,
+        "text": "series",
+        "fill": "#000"
+      }
+    ]
+  }
+}

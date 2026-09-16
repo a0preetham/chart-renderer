@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line over a discrete x axis, which uses a point scale rather than a band scale.",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "values": [
+      { "month": "Jan", "sales": 18 },
+      { "month": "Feb", "sales": 25 },
+      { "month": "Mar", "sales": 14 },
+      { "month": "Apr", "sales": 33 }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": { "field": "month", "type": "nominal" },
+    "y": { "field": "sales", "type": "quantitative" }
+  }
+}

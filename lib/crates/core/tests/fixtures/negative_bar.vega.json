@@ -1,0 +1,226 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 300,
+    "height": 200
+  },
+  "marks": {
+    "axis-grid": [
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 175,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 125,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 75,
+        "x2": 300,
+        "stroke": "#ddd"
+      },
+      {
+        "role": "axis-grid",
+        "x": 0,
+        "y": 25,
+        "x2": 300,
+        "stroke": "#ddd"
+      }
+    ],
+    "axis-tick": [
+      {
+        "role": "axis-tick",
+        "x": 37,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 112,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 187,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 262,
+        "y": 0,
+        "y2": 5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 175,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 125,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 75,
+        "x2": -5,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-tick",
+        "x": 0,
+        "y": 25,
+        "x2": -5,
+        "stroke": "#888"
+      }
+    ],
+    "axis-label": [
+      {
+        "role": "axis-label",
+        "x": 37,
+        "y": 7,
+        "text": "Q1",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 112,
+        "y": 7,
+        "text": "Q2",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 187,
+        "y": 7,
+        "text": "Q3",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": 262,
+        "y": 7,
+        "text": "Q4",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 175,
+        "text": "−20",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 125,
+        "text": "−10",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 75,
+        "text": "0",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-label",
+        "x": -7,
+        "y": 25,
+        "text": "10",
+        "fill": "#000"
+      }
+    ],
+    "axis-domain": [
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 0,
+        "x2": 300,
+        "stroke": "#888"
+      },
+      {
+        "role": "axis-domain",
+        "x": 0,
+        "y": 200,
+        "y2": 0,
+        "stroke": "#888"
+      }
+    ],
+    "axis-title": [
+      {
+        "role": "axis-title",
+        "x": 150,
+        "y": 27,
+        "text": "quarter",
+        "fill": "#000"
+      },
+      {
+        "role": "axis-title",
+        "x": -35,
+        "y": 100,
+        "text": "delta",
+        "fill": "#000"
+      }
+    ],
+    "mark": [
+      {
+        "role": "mark",
+        "x": 3.75,
+        "y": 5,
+        "y2": 75,
+        "width": 67.5,
+        "height": 70,
+        "fill": "#e45756"
+      },
+      {
+        "role": "mark",
+        "x": 78.75,
+        "y": 75,
+        "y2": 185,
+        "width": 67.5,
+        "height": 110,
+        "fill": "#e45756"
+      },
+      {
+        "role": "mark",
+        "x": 153.75,
+        "y": 40,
+        "y2": 75,
+        "width": 67.5,
+        "height": 35,
+        "fill": "#e45756"
+      },
+      {
+        "role": "mark",
+        "x": 228.75,
+        "y": 75,
+        "y2": 90,
+        "width": 67.5,
+        "height": 15,
+        "fill": "#e45756"
+      }
+    ]
+  }
+}

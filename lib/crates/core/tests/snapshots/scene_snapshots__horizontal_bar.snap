@@ -1,0 +1,966 @@
+---
+source: crates/core/tests/scene_snapshots.rs
+expression: json
+---
+{
+  "background": {
+    "a": 255,
+    "b": 255,
+    "g": 255,
+    "r": 255
+  },
+  "height": 242,
+  "items": [
+    {
+      "kind": "line",
+      "points": [
+        [
+          35,
+          5
+        ],
+        [
+          35,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          30,
+          30
+        ],
+        [
+          35,
+          30
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          30,
+          80
+        ],
+        [
+          35,
+          80
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          30,
+          130
+        ],
+        [
+          35,
+          130
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          30,
+          180
+        ],
+        [
+          35,
+          180
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "A",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 28,
+      "y": 30
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "B",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 28,
+      "y": 80
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "C",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 28,
+      "y": 130
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "D",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 28,
+      "y": 180
+    },
+    {
+      "anchor": "middle",
+      "angle": -90,
+      "baseline": "alphabetic",
+      "content": "category",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 16.778,
+      "y": 105
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          35,
+          5
+        ],
+        [
+          35,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          65,
+          5
+        ],
+        [
+          65,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          95,
+          5
+        ],
+        [
+          95,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          125,
+          5
+        ],
+        [
+          125,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          155,
+          5
+        ],
+        [
+          155,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          185,
+          5
+        ],
+        [
+          185,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          215,
+          5
+        ],
+        [
+          215,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          245,
+          5
+        ],
+        [
+          245,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          275,
+          5
+        ],
+        [
+          275,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          305,
+          5
+        ],
+        [
+          305,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          335,
+          5
+        ],
+        [
+          335,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          35,
+          205
+        ],
+        [
+          335,
+          205
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          35,
+          205
+        ],
+        [
+          35,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          65,
+          205
+        ],
+        [
+          65,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          95,
+          205
+        ],
+        [
+          95,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          125,
+          205
+        ],
+        [
+          125,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          155,
+          205
+        ],
+        [
+          155,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          185,
+          205
+        ],
+        [
+          185,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          215,
+          205
+        ],
+        [
+          215,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          245,
+          205
+        ],
+        [
+          245,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          275,
+          205
+        ],
+        [
+          275,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          305,
+          205
+        ],
+        [
+          305,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          335,
+          205
+        ],
+        [
+          335,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "0",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 35,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "10",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 65,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "20",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 95,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "30",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 125,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "40",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 155,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "50",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 185,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "60",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 215,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "70",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 245,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "80",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 275,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "90",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 305,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "100",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 335,
+      "y": 212
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "amount",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 185,
+      "y": 226
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "h": 45,
+      "kind": "rect",
+      "stroke": null,
+      "w": 84,
+      "x": 35,
+      "y": 7.5
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "h": 45,
+      "kind": "rect",
+      "stroke": null,
+      "w": 165,
+      "x": 35,
+      "y": 57.5
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "h": 45,
+      "kind": "rect",
+      "stroke": null,
+      "w": 129,
+      "x": 35,
+      "y": 107.5
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "h": 45,
+      "kind": "rect",
+      "stroke": null,
+      "w": 273,
+      "x": 35,
+      "y": 157.5
+    }
+  ],
+  "plot": {
+    "h": 200,
+    "w": 300,
+    "x": 35,
+    "y": 5
+  },
+  "width": 348.342
+}

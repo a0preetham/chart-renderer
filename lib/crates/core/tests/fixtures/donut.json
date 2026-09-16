@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A donut — the same arc mark with an inner radius punched out.",
+  "width": 260,
+  "height": 260,
+  "data": {
+    "values": [
+      { "browser": "Chrome", "share": 64 },
+      { "browser": "Safari", "share": 19 },
+      { "browser": "Edge", "share": 5 },
+      { "browser": "Firefox", "share": 3 },
+      { "browser": "Other", "share": 9 }
+    ]
+  },
+  "mark": { "type": "arc", "innerRadius": 60 },
+  "encoding": {
+    "theta": { "field": "share", "type": "quantitative" },
+    "color": { "field": "browser", "type": "nominal" }
+  }
+}

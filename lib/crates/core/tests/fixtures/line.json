@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A single line over a quantitative x axis, with rows deliberately out of order.",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "values": [
+      { "step": 3, "value": 28 },
+      { "step": 1, "value": 12 },
+      { "step": 5, "value": 43 },
+      { "step": 2, "value": 35 },
+      { "step": 4, "value": 22 }
+    ]
+  },
+  "mark": "line",
+  "encoding": {
+    "x": { "field": "step", "type": "quantitative" },
+    "y": { "field": "value", "type": "quantitative" }
+  }
+}

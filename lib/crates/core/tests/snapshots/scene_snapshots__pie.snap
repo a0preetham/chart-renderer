@@ -1,0 +1,222 @@
+---
+source: crates/core/tests/scene_snapshots.rs
+expression: json
+---
+{
+  "background": {
+    "a": 255,
+    "b": 255,
+    "g": 255,
+    "r": 255
+  },
+  "height": 210,
+  "items": [
+    {
+      "cx": 105,
+      "cy": 105,
+      "end_angle": 6.283,
+      "fill": {
+        "a": 255,
+        "b": 178,
+        "g": 183,
+        "r": 114
+      },
+      "inner_radius": 0,
+      "kind": "arc",
+      "outer_radius": 100,
+      "start_angle": 4.946,
+      "stroke": null
+    },
+    {
+      "cx": 105,
+      "cy": 105,
+      "end_angle": 2.674,
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "inner_radius": 0,
+      "kind": "arc",
+      "outer_radius": 100,
+      "start_angle": 0,
+      "stroke": null
+    },
+    {
+      "cx": 105,
+      "cy": 105,
+      "end_angle": 4.946,
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "inner_radius": 0,
+      "kind": "arc",
+      "outer_radius": 100,
+      "start_angle": 4.278,
+      "stroke": null
+    },
+    {
+      "cx": 105,
+      "cy": 105,
+      "end_angle": 4.278,
+      "fill": {
+        "a": 255,
+        "b": 24,
+        "g": 133,
+        "r": 245
+      },
+      "inner_radius": 0,
+      "kind": "arc",
+      "outer_radius": 100,
+      "start_angle": 2.674,
+      "stroke": null
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "top",
+      "content": "category",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 223,
+      "y": 5
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 168,
+        "g": 120,
+        "r": 76
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 223,
+      "y": 22
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Alpha",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 241.284,
+      "y": 27.642
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 24,
+        "g": 133,
+        "r": 245
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 223,
+      "y": 35.284
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Beta",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 241.284,
+      "y": 40.926
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 223,
+      "y": 48.568
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Mid",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 241.284,
+      "y": 54.209
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 178,
+        "g": 183,
+        "r": 114
+      },
+      "h": 11.284,
+      "kind": "rect",
+      "stroke": null,
+      "w": 11.284,
+      "x": 223,
+      "y": 61.851
+    },
+    {
+      "anchor": "start",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "Zeta",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 241.284,
+      "y": 67.493
+    }
+  ],
+  "plot": {
+    "h": 200,
+    "w": 200,
+    "x": 5,
+    "y": 5
+  },
+  "width": 271.86
+}

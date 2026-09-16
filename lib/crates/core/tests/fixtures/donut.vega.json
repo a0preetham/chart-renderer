@@ -1,0 +1,150 @@
+{
+  "note": "Coordinates are relative to the plot group origin; see dump.mjs.",
+  "vegaLite": "5.23.0",
+  "plot": {
+    "width": 260,
+    "height": 260
+  },
+  "marks": {
+    "mark": [
+      {
+        "role": "mark",
+        "x": 130,
+        "y": 130,
+        "fill": "#4c78a8",
+        "angle0": 0,
+        "angle1": 4.021,
+        "outerRadius": 130,
+        "innerRadius": 60
+      },
+      {
+        "role": "mark",
+        "x": 130,
+        "y": 130,
+        "fill": "#54a24b",
+        "angle0": 5.089,
+        "angle1": 6.283,
+        "outerRadius": 130,
+        "innerRadius": 60
+      },
+      {
+        "role": "mark",
+        "x": 130,
+        "y": 130,
+        "fill": "#f58518",
+        "angle0": 4.021,
+        "angle1": 4.335,
+        "outerRadius": 130,
+        "innerRadius": 60
+      },
+      {
+        "role": "mark",
+        "x": 130,
+        "y": 130,
+        "fill": "#e45756",
+        "angle0": 4.335,
+        "angle1": 4.524,
+        "outerRadius": 130,
+        "innerRadius": 60
+      },
+      {
+        "role": "mark",
+        "x": 130,
+        "y": 130,
+        "fill": "#72b7b2",
+        "angle0": 4.524,
+        "angle1": 5.089,
+        "outerRadius": 130,
+        "innerRadius": 60
+      }
+    ],
+    "legend-symbol": [
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#4c78a8",
+        "shape": "circle"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#f58518",
+        "shape": "circle"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#e45756",
+        "shape": "circle"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#72b7b2",
+        "shape": "circle"
+      },
+      {
+        "role": "legend-symbol",
+        "x": 6,
+        "y": 6,
+        "size": 100,
+        "fill": "#54a24b",
+        "shape": "circle"
+      }
+    ],
+    "legend-label": [
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Chrome",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Edge",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Firefox",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Other",
+        "fill": "#000"
+      },
+      {
+        "role": "legend-label",
+        "x": 16,
+        "y": 6,
+        "text": "Safari",
+        "fill": "#000"
+      }
+    ],
+    "legend-title": [
+      {
+        "role": "legend-title",
+        "x": 0,
+        "y": 0,
+        "text": "browser",
+        "fill": "#000"
+      }
+    ]
+  }
+}

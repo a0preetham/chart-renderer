@@ -1,0 +1,9 @@
+name = "chart-renderer-bench"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# The wasm module is uploaded alongside the script; `wrangler dev` runs it under
+# workerd, the same runtime Cloudflare runs in production.
+[[rules]]
+type = "CompiledWasm"
+globs = ["**/*.wasm"]

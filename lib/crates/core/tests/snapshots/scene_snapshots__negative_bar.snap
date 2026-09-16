@@ -1,0 +1,546 @@
+---
+source: crates/core/tests/scene_snapshots.rs
+expression: json
+---
+{
+  "background": {
+    "a": 255,
+    "b": 255,
+    "g": 255,
+    "r": 255
+  },
+  "height": 251,
+  "items": [
+    {
+      "kind": "line",
+      "points": [
+        [
+          44,
+          185
+        ],
+        [
+          344,
+          185
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          44,
+          135
+        ],
+        [
+          344,
+          135
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          44,
+          85
+        ],
+        [
+          344,
+          85
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          44,
+          35
+        ],
+        [
+          344,
+          35
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 221,
+          "g": 221,
+          "r": 221
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          44,
+          10
+        ],
+        [
+          44,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          39,
+          185
+        ],
+        [
+          44,
+          185
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          39,
+          135
+        ],
+        [
+          44,
+          135
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          39,
+          85
+        ],
+        [
+          44,
+          85
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          39,
+          35
+        ],
+        [
+          44,
+          35
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "−20",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 37,
+      "y": 185
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "−10",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 37,
+      "y": 135
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "0",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 37,
+      "y": 85
+    },
+    {
+      "anchor": "end",
+      "angle": 0,
+      "baseline": "middle",
+      "content": "10",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 37,
+      "y": 35
+    },
+    {
+      "anchor": "middle",
+      "angle": -90,
+      "baseline": "alphabetic",
+      "content": "delta",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 16.037,
+      "y": 110
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          44,
+          210
+        ],
+        [
+          344,
+          210
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          82,
+          210
+        ],
+        [
+          82,
+          215
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          157,
+          210
+        ],
+        [
+          157,
+          215
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          232,
+          210
+        ],
+        [
+          232,
+          215
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "kind": "line",
+      "points": [
+        [
+          307,
+          210
+        ],
+        [
+          307,
+          215
+        ]
+      ],
+      "stroke": {
+        "color": {
+          "a": 255,
+          "b": 136,
+          "g": 136,
+          "r": 136
+        },
+        "width": 1
+      }
+    },
+    {
+      "anchor": "end",
+      "angle": 270,
+      "baseline": "middle",
+      "content": "Q1",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 81.5,
+      "y": 217
+    },
+    {
+      "anchor": "end",
+      "angle": 270,
+      "baseline": "middle",
+      "content": "Q2",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 156.5,
+      "y": 217
+    },
+    {
+      "anchor": "end",
+      "angle": 270,
+      "baseline": "middle",
+      "content": "Q3",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 231.5,
+      "y": 217
+    },
+    {
+      "anchor": "end",
+      "angle": 270,
+      "baseline": "middle",
+      "content": "Q4",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 10,
+      "x": 306.5,
+      "y": 217
+    },
+    {
+      "anchor": "middle",
+      "angle": 0,
+      "baseline": "top",
+      "content": "quarter",
+      "fill": {
+        "a": 255,
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "kind": "text",
+      "size": 11,
+      "x": 194,
+      "y": 234.34
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "h": 70,
+      "kind": "rect",
+      "stroke": null,
+      "w": 67.5,
+      "x": 47.75,
+      "y": 15
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "h": 110,
+      "kind": "rect",
+      "stroke": null,
+      "w": 67.5,
+      "x": 122.75,
+      "y": 85
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "h": 35,
+      "kind": "rect",
+      "stroke": null,
+      "w": 67.5,
+      "x": 197.75,
+      "y": 50
+    },
+    {
+      "fill": {
+        "a": 255,
+        "b": 86,
+        "g": 87,
+        "r": 228
+      },
+      "h": 15,
+      "kind": "rect",
+      "stroke": null,
+      "w": 67.5,
+      "x": 272.75,
+      "y": 85
+    }
+  ],
+  "plot": {
+    "h": 200,
+    "w": 300,
+    "x": 44,
+    "y": 10
+  },
+  "width": 349
+}

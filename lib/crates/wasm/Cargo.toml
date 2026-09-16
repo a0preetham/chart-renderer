@@ -1,0 +1,35 @@
+[package]
+name = "chart-renderer-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "wasm-bindgen surface for chart-renderer"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+chart-renderer = { path = "../core", default-features = false }
+wasm-bindgen = "0.2"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"
+
+[features]
+default = ["simple-text"]
+simple-text = ["chart-renderer/simple-text"]
+full-text = ["chart-renderer/full-text"]
+
+# wasm-pack ships an older wasm-opt than the wasm features rustc now emits by
+# default, so it rejects the module unless those features are named explicitly.
+# Workers supports all of these.
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = [
+    "-O3",
+    "--enable-bulk-memory",
+    "--enable-nontrapping-float-to-int",
+    "--enable-sign-ext",
+    "--enable-mutable-globals",
+    "--enable-reference-types",
+    "--enable-simd",
+]

@@ -1,0 +1,14 @@
+{
+  "name": "chart-renderer-bench",
+  "private": true,
+  "type": "module",
+  "description": "Per-stage CPU benchmark for chart-renderer, run under workerd via wrangler dev.",
+  "scripts": {
+    "sync": "node sync-fixtures.mjs",
+    "dev": "wrangler dev",
+    "bench": "node run.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.0"
+  }
+}

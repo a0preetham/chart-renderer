@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Values straddling zero, so bars extend both ways from a shared baseline.",
+  "width": 300,
+  "height": 200,
+  "data": {
+    "values": [
+      { "quarter": "Q1", "delta": 14 },
+      { "quarter": "Q2", "delta": -22 },
+      { "quarter": "Q3", "delta": 7 },
+      { "quarter": "Q4", "delta": -3 }
+    ]
+  },
+  "mark": { "type": "bar", "color": "#e45756" },
+  "encoding": {
+    "x": { "field": "quarter", "type": "nominal" },
+    "y": { "field": "delta", "type": "quantitative" }
+  }
+}
