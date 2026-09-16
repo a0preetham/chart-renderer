@@ -89,6 +89,16 @@ Milliseconds per render, default `Fast` compression:
 Reproduce with `cd bench/workerd && npm install && npx wrangler dev`, then
 `curl 'http://localhost:8787/?runs=200'`.
 
+**These are local numbers, and local turned out not to predict production.**
+`wrangler dev` runs real workerd — faithful for *correctness* — but is not a
+stand-in for *production CPU timing*. Deploying the same code as a live Worker
+and reading Cloudflare's own per-invocation accounting (via `wrangler tail`,
+not `performance.now()` — see the root README) gave single real requests of
+**5–24ms CPU time**, several times what this table suggests. See the root
+[`README.md`](../README.md#server-side-rendering) for the measurement and the
+full explanation, including why the endpoint's own `Server-Timing` header
+cannot be trusted on real Cloudflare hardware.
+
 ### Two findings that contradict the original estimates
 
 **1. PNG encoding is not the bottleneck; rasterization is.** The handoff called
@@ -113,8 +123,13 @@ vector ops are more compact than the unrolled scalar loops they replace. The net
 cost of going from the size-optimised build to the fast one is ~20 KB gzipped for
 a 4.8x speedup. Both settings are committed (`Cargo.toml`, `.cargo/config.toml`).
 
-With that, every fixture fits the **Workers Free 10 ms CPU budget** with room to
-spare. Under the old settings, most did not.
+With that, every fixture fits the Workers Free 10 ms CPU budget in this *local*
+measurement, with room to spare — under the old settings, most did not. Take
+the margin with a grain of salt, though: real production numbers (see above)
+came in meaningfully higher than local, to the point that several fixtures
+exceed 10ms on the actual edge. The relative win from this change (4.8x) is
+still real and still the right call; the absolute "fits comfortably" claim
+was a local-only artifact.
 
 ### The compression lever
 

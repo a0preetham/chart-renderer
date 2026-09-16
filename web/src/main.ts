@@ -34,6 +34,10 @@ const app = document.querySelector<HTMLDivElement>('#app')!
 
 app.innerHTML = `
   <header>
+    <div class="top-links">
+      <a class="home-link" href="https://preetham.co">← preetham.co</a>
+      <a class="home-link" href="https://github.com/a0preetham/chart-renderer">GitHub ↗</a>
+    </div>
     <h1>chart-renderer</h1>
     <p>
       A Vega-Lite-style chart renderer written in Rust and compiled to WebAssembly —
@@ -79,6 +83,21 @@ app.innerHTML = `
         <div class="render"><canvas id="compare-canvas"></canvas></div>
         <div class="stats" id="compare-stats"></div>
       </section>
+
+      <section class="panel">
+        <h2>chart-renderer (server-rendered, Cloudflare Worker)</h2>
+        <div class="render" id="server"><span class="loading">rendering…</span></div>
+        <div class="stats" id="server-stats"></div>
+        <p class="caption">
+          <code>scene</code>/<code>raster</code>/<code>encode</code> come from this
+          Worker's own clock and read as ~0&nbsp;ms in production — Cloudflare
+          deliberately coarsens <code>performance.now()</code> inside an isolate as a
+          Spectre-style timing mitigation, so code cannot measure itself precisely.
+          The number that matters is Cloudflare's own per-invocation CPU accounting,
+          visible via <code>wrangler tail</code> — see the repo README for real
+          measured figures.
+        </p>
+      </section>
     </div>
   </div>
 
@@ -99,6 +118,8 @@ const comparePanel = app.querySelector<HTMLElement>('#compare-panel')!
 const compareTitle = app.querySelector<HTMLHeadingElement>('#compare-title')!
 const compareCanvas = app.querySelector<HTMLCanvasElement>('#compare-canvas')!
 const compareStats = app.querySelector<HTMLDivElement>('#compare-stats')!
+const serverPane = app.querySelector<HTMLDivElement>('#server')!
+const serverStats = app.querySelector<HTMLDivElement>('#server-stats')!
 
 let mode: ViewMode = 'split'
 let objectUrl: string | null = null
@@ -208,6 +229,66 @@ async function renderVega(spec: unknown, scale: number): Promise<number> {
   return elapsed
 }
 
+type ServerTimings = { network: number; scene: number; raster: number; encode: number; total: number; bytes: number }
+
+let serverObjectUrl: string | null = null
+
+/**
+ * Renders via the live `/api/render` endpoint on the deployed Worker — the
+ * actual server-side path, not a local emulation. `scale` is sent along so the
+ * image quality matches the other panes; a real backend integration would
+ * normally leave it at 1, since a server has no `devicePixelRatio` to match.
+ *
+ * The `Server-Timing` response header carries this specific request's measured
+ * stage times, straight from the isolate that rendered it — not an amortized
+ * average.
+ */
+async function renderServer(spec: string, scale: number): Promise<ServerTimings> {
+  const t0 = performance.now()
+  const response = await fetch(`/api/render?scale=${scale}&compression=${FAST}`, {
+    method: 'POST',
+    body: spec,
+  })
+  const network = performance.now() - t0
+
+  if (!response.ok) {
+    throw new Error((await response.text()) || `HTTP ${response.status}`)
+  }
+
+  const buf = await response.arrayBuffer()
+
+  // "scene;dur=0.020, raster;dur=1.200, ..." — see server/worker.js.
+  const stages: Record<string, number> = {}
+  for (const part of (response.headers.get('server-timing') ?? '').split(',')) {
+    const m = part.trim().match(/^(\w+);dur=([\d.]+)$/)
+    if (m) stages[m[1]] = Number(m[2])
+  }
+
+  if (serverObjectUrl) URL.revokeObjectURL(serverObjectUrl)
+  serverObjectUrl = URL.createObjectURL(new Blob([buf], { type: 'image/png' }))
+
+  const img = new Image()
+  img.src = serverObjectUrl
+  img.alt = 'Chart rendered by the deployed Cloudflare Worker'
+  // The PNG's own pixel dimensions bake in `scale`; the server has no notion of
+  // logical vs. device pixels the way the other two panes do, so recover the
+  // logical size the same way a browser would — decode it, then divide back
+  // down — to keep all three panes the same displayed size.
+  await img.decode()
+  img.style.width = `${img.naturalWidth / scale}px`
+  img.style.height = `${img.naturalHeight / scale}px`
+  serverPane.replaceChildren(img)
+
+  return {
+    network,
+    scene: stages.scene ?? 0,
+    raster: stages.raster ?? 0,
+    encode: stages.encode ?? 0,
+    total: stages.total ?? 0,
+    bytes: buf.byteLength,
+  }
+}
+
 const ms = (v: number) => `${v.toFixed(2)} ms`
 const kb = (v: number) => `${(v / 1024).toFixed(1)} KB`
 const pct = (v: number) => `${(v * 100).toFixed(2)}%`
@@ -300,6 +381,30 @@ async function render() {
 
   showError(ourError && `chart-renderer: ${ourError}`)
 
+  // Fire-and-forget relative to the two synchronous-ish panes above: the network
+  // round trip must not make editing the spec feel laggy, and a server hiccup
+  // must not take down the rest of the page.
+  renderServer(source, scale)
+    .then((s) => {
+      serverStats.innerHTML = [
+        stat('network+server', ms(s.network)),
+        stat('scene', ms(s.scene)),
+        stat('raster', ms(s.raster)),
+        stat('encode', ms(s.encode)),
+        stat('server total', ms(s.total)),
+        stat('png', kb(s.bytes)),
+      ].join('')
+    })
+    .catch((e) => {
+      serverStats.textContent = ''
+      serverPane.replaceChildren(
+        Object.assign(document.createElement('span'), {
+          className: 'loading',
+          textContent: `Server render failed: ${(e as Error).message}`,
+        })
+      )
+    })
+
   // Our <img> has to have decoded before it can be drawn into the comparison.
   if (ourLayer) {
     try {
@@ -338,18 +443,25 @@ async function main() {
   const wasmBytes = (await response.arrayBuffer()).byteLength
 
   footnote.innerHTML = `
-    <strong>Why bother?</strong> Not bundle size, as it turns out — Vega, Vega-Lite
-    and vega-embed come to about 299&nbsp;KB gzipped, and the WASM on the right is
-    <b>${kb(wasmBytes)}</b> raw, roughly 272&nbsp;KB gzipped. They are comparable.
+    <strong>Why bother?</strong> Not bundle size — Vega, Vega-Lite and vega-embed come
+    to about 299&nbsp;KB gzipped, and the WASM on the right is <b>${kb(wasmBytes)}</b>
+    raw, roughly 272&nbsp;KB gzipped. Comparable.
     <br /><br />
-    The difference is <em>where they can run</em>. Vega renders through a DOM and a
-    canvas, and a Cloudflare Worker has neither; the usual workarounds
-    (<code>jsdom</code>, <code>node-canvas</code>) are native dependencies that a
-    Worker cannot load at all. chart-renderer rasterizes in pure Rust with no DOM,
-    no canvas and no native code, so the same spec renders at the edge — inside the
-    free tier's 10&nbsp;ms CPU budget, with room to spare.
+    The real difference is that this one renders <em>without a browser at all</em>.
+    Vega needs a DOM and a canvas to draw anything; a Cloudflare Worker, a Lambda, any
+    headless server has neither, and the usual workarounds — <code>jsdom</code>,
+    <code>node-canvas</code> — are native dependencies that cannot load in a Worker at
+    all. chart-renderer is pure Rust with no DOM, no canvas, no native bindings —
+    <b>low dependencies</b> (tiny-skia to rasterize, ab_glyph for text, and not much
+    else) is what makes headless rendering possible in the first place, not an
+    afterthought bolted onto a browser-shaped design.
     <br /><br />
-    Both panes render at <code>devicePixelRatio</code> and draw with the same
+    And it is <b>fast</b>: the third pane below is this exact code running server-side
+    on this Worker right now — parsed, scaled, rasterized and PNG-encoded in
+    single-digit-to-low-tens of milliseconds, measured by Cloudflare's own accounting
+    rather than a number we computed ourselves (more on that below the pane).
+    <br /><br />
+    The top two panes render at <code>devicePixelRatio</code> and draw with the same
     embedded font, so the comparison views show real layout differences rather than
     sampling or typeface artefacts. The library's tests additionally cross-check its
     geometry against Vega's own scenegraph on every one of these samples.

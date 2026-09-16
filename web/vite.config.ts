@@ -13,5 +13,15 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
+    proxy: {
+      // The API only exists once deployed (it's part of the Worker script, not
+      // this Vite dev server). Proxying to the live deployment means the
+      // server-rendered pane shows real production numbers even while iterating
+      // on the UI locally, rather than a "not available in dev" placeholder.
+      '/api': {
+        target: 'https://chart-renderer.preetham.workers.dev',
+        changeOrigin: true,
+      },
+    },
   },
 })

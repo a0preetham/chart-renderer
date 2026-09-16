@@ -1,8 +1,15 @@
 name = "chart-renderer"
+main = "server/worker.js"
 compatibility_date = "2025-01-01"
 
-# Pure static assets — no Worker script needed. The whole app is served
-# client-side; vite builds it, wrangler uploads it.
+# The wasm module is imported directly by the Worker script (see
+# server/worker.js) for the live /api/render and /api/bench endpoints.
+[[rules]]
+type = "CompiledWasm"
+globs = ["**/*.wasm"]
+
+# Everything that isn't an API route falls through to the built demo.
 [assets]
 directory = "./web/dist"
+binding = "ASSETS"
 not_found_handling = "single-page-application"
